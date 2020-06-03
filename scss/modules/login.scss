@@ -1,0 +1,103 @@
+.speaker-login {
+	background-color: site-color('primary');
+	color: site-color('day');
+	padding: 30px 20px;
+
+	.speakers-bio {
+		display: flex;
+		text-align: center;
+	} // .speakers-bio
+
+	figure {
+		flex: 1;
+		padding: 10px;
+
+		figcaption {
+			p {
+				margin: 0;
+			} // p
+
+			small {
+				display: block;
+				font-size: 0.7em;
+			} // small
+		} // figcaption
+	} // figure
+
+	.speaker-intro-login {
+		h3 {
+			font-size: 1.5em;
+		} // h3
+
+		a {
+			color: site-color('day');
+			text-decoration: underline;
+		} // a
+
+		.login {
+			input {
+				background: site-color('day');
+				border: 0;
+				margin-right: 15px;
+				margin-bottom: 15px;
+				padding: 5px 10px;
+
+				&[type="submit"] {
+					background: none;
+					border: 1px solid site-color('day');
+					color: site-color('day');
+				} // [type="submit"]
+			} // input
+		} // .login
+	} // .speaker-intro-login
+
+	@include retina(iPhonel) {
+		.speaker-login_flex {
+			display: flex;
+		} // .speaker-login_flex
+
+		.speakers-bio {
+			flex: 1 1 60%;
+			margin-right: 20px;
+		} // .speakers-bio
+
+		.speaker-intro-login {
+			flex: 1 1 40%;
+
+			h3 {
+				margin-top: 10px;
+			} // h3
+		} // .speaker-intro-login
+	} // bp(iPhonel)
+
+	@include breakpoint($tablet) {
+		.speaker-login_flex {
+			display: flex;
+		} // .speaker-login_flex
+
+		.speakers-bio {
+			flex: 1 1 60%;
+			margin-right: 20px;
+		} // .speakers-bio
+
+		.speaker-intro-login {
+			flex: 1 1 40%;
+
+			h3 {
+				margin-top: 10px;
+			} // h3
+		} // .speaker-intro-login
+	} // bp($tablet)
+
+	@include breakpoint($desktop) {
+		padding: 50px 0;
+	} // bp($desktop)
+
+	@include breakpoint($common) {
+		.speaker-login_flex {
+			max-width: 1336px;
+			margin-left: auto;
+			margin-right: auto;
+		} // .speaker-login_flex
+	} // bp($dcommon)
+} // .speaker-login

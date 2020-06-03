@@ -1,0 +1,35 @@
+.site-header {
+	h1 {
+		background: image("masterhero_fs.jpg") center top/100% no-repeat;
+		padding-top: 65.43%;
+		font: 0/0 a;
+		text-shadow: none;
+		color: transparent;
+		margin: 0;
+	} // h1
+
+	@include breakpoint($tablet) {
+		h1 {
+			background: image("masterhero_fx.jpg") center top/100% no-repeat;
+		} // h1
+
+		&.home {
+			h1 {
+				background: image("masterhero_fxn.jpg") center top/100% no-repeat;
+			} // .h1
+		} // .home
+	} // bp($tablet)
+
+	@include breakpoint($desktop) {
+		h1 {
+			background: image("masterhero_fxx.jpg") center top/100% no-repeat;
+			padding-top: 51.33%;
+		} // h1
+
+		&.home {
+			h1 {
+				background: image("masterhero_fxxn.jpg") center top/100% no-repeat;
+			} // .h1
+		} // .home
+	} // bp($desktop)
+} // .site-header

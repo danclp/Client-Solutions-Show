@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+
+	&:before, &:after {
+		box-sizing: border-box;
+	} // :before, :after
+} // *
+
+body {
+	background-color: lighten(site-color('night'), 93);
+	font            : $mainFont;
+} //body
+
+// Setup the function in your functions or helpers files, wherever you keep these bits.
+@function headings($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+}
+
+// Then call it with the rules/styles you want wherever you want (As long as the file/include has access to the above function of course).
+#{headings()} {
+  font 				 		: $mainFont;
+  line-height 		: 1.15;
+	margin 					: 2.75rem 0 1rem;
+} //headings
+
+h1 {
+	margin-top 			: 0;
+	font-size 			: 4.209em;
+} // h1
+
+h2 {
+	font-size 			: 3.157em;
+} // h2
+
+h3 {
+	font-size 			: 2.369em;
+} // h3
+
+h4 {
+	font-size 			: 1.777em;
+} // h4
+
+h5 {
+	font-size 			: 1.333em;
+} // h5
+
+p {
+	margin-bottom   : 1.25em;
+} //p
+
+small, .text_small {
+	font-size 			: 0.75em;
+}
+
+b {
+	font-weight: weight('bold');
+} // b
+
+a {
+	color 					: site-color('primary');
+	display         : inline-block;
+	text-decoration : none;
+} // a
+
+ul {
+	list-style      : none;
+	margin 					: 0;
+	padding 				: 0;
+} // ul
+
+img {
+	display         : block;
+	max-width       : 100%;
+} // img
+
+figure {
+	margin: 0;
+	padding: 0;
+} // figure
+
+// Clearfix
+.clearfix {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	} // :after
+} // .clearfix
+
+.wrap {
+	transition: all 0.35s ease-in-out;
+	padding-left: 15px;
+	padding-right: 15px;
+} // .wrap
+
+.outer-wrap {
+	transition: all 0.35s ease-in-out;
+	margin-left: auto;
+	margin-right: auto;
+	
+	@include breakpoint($tablet) {
+		max-width: 750px;
+	} // bp($tablet)
+	
+	@include breakpoint($desktop) {
+		max-width: 970px;
+	} // bp($desktop)
+
+	@include breakpoint($common) {
+		max-width: 1240px;
+	}
+	
+	@include breakpoint($widescn) {
+		// max-width: 1920px;
+	} // bp($wide)
+} // .outer-wrap

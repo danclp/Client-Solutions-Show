@@ -1,0 +1,131 @@
+.product-hero {
+	.col-left {
+		.product-name {
+			font-size: 1.65em;
+			margin: 0 0 20px;
+		} // .product-name
+	} // .col-left
+
+	.col-right {
+		background: image("latitudeBG.jpg") center center/cover no-repeat;
+		margin-bottom: 20px;
+
+		&.optiplex {
+			background: image("optiplex.jpg") center bottom/cover no-repeat;
+			margin-bottom: 20px;
+		} // .precision
+
+		&.precision {
+			background: image("precision.jpg") center bottom/cover no-repeat;
+			margin-bottom: 20px;
+		} // .precision
+
+		&.unified {
+			background: image("unified.jpg") center center/cover no-repeat;
+			padding-top: 50%;
+
+			.product-cta {
+				.whitebtn {
+					border: 1px solid site-color('day');
+
+					a {
+						color: site-color('day');
+					} // a
+
+					&:hover {
+						border: 0;
+					} // :hover
+				} // .whitebtn
+			} // .product-cta
+
+			.slogan {
+				color: site-color('day');
+				margin-left: 10px;
+			} // .slogan
+
+			@include breakpoint($tablet) {
+				background: image("unified.jpg") center center/cover no-repeat;
+			} // bp($tablet)
+		} // .unified
+	} // .col-right
+
+	.product-cta {
+		padding-bottom: 10px;
+
+		ul {
+			align-items: center;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 10px;
+
+			li {
+				flex: 0 0 40%;
+				margin: 10px;
+				text-align: center;
+
+				&.home {
+					img {
+						width: 30px;
+					} // img
+				} // .home
+
+				&.bluebtn {
+					a {
+						color: site-color('day');
+					} // a
+				} // .bluebtn
+			}
+		} // ul
+	} // .product-cta
+
+	.slogan {
+		margin: 0;
+	} // .slogan
+
+	@include retina(iPhonel) {
+		.container {
+			align-items: flex-start;
+			display: flex;
+			flex-wrap: wrap;
+		} // .container
+
+		.col-left {
+			flex: 1 0 40%;
+			margin-right: 30px;
+			overflow: hidden;
+		} // .col-left
+
+		.col-right {
+			flex: 1 0 45%;
+			overflow: hidden;
+		} // .col-right
+	} // retina(iPhonel)
+
+	@include breakpoint($tablet) {
+		.container {
+			align-items: flex-start;
+			display: flex;
+			flex-wrap: wrap;
+		} // .container
+
+		.col-left {
+			flex: 1 0 30%;
+			margin-right: 30px;
+			overflow: hidden;
+		} // .col-left
+
+		.col-right {
+			flex: 3 0 60%;
+			overflow: hidden;
+		} // .col-right
+
+		.product-cta {
+			ul {
+				li {
+					flex: auto;
+				} // li
+			} // ul
+		} // .product-cta 
+	} // breakpoint($tablet)
+} // .product-hero

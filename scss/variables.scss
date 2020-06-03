@@ -1,0 +1,34 @@
+// Susy and breakpoint
+
+// Media Query
+$narrow 	          : 340px;
+$tablet 	          : 768px;
+$desktop 	          : 1024px;
+$common 	          : 1336px;
+$widescn 	          : 1920px;
+
+// Font-weight
+$font-weight: (
+	'light'           : 100,
+	'regular'         : 400,
+	'bold' 			      : 700
+);
+
+// Color Swatches
+$site-colors: (
+  'primary'         : #0076CE,
+  'midnight'        : #00447C,
+  'lightblue'       : #41B6E6,
+  'purple'          : #6E2585,
+  'berry'           : #B7295A,
+  'orange'          : #EE6411,
+  'text'            : #444,
+  'gray'            : #808080,
+  'granite'         : #C8C9C7,
+  'quartz'          : #EEE,
+  'red'             : #CE1126,
+  'green'           : #6EA204,
+  'yellow'          : #F2AF00,
+  'night'           : #000,
+  'day'             : #FFF
+);

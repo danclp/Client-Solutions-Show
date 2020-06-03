@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js">
+<head>
+	<meta charset='UTF-8'>
+	<!-- www.phpied.com/conditional-comments-block-downloads/ -->
+	<!--[if IE]><![endif]-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/screen.css" />
+
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<title>The Client Solutions Show</title>
+
+</head>
+
+<body>
+	<header class="site-header livecast">
+		<div class="wrap">
+			<div class="brands-container">
+				<div class="brand-dell">
+					<a href="home.html"><img src="images/dellBrand.png" alt="Dell Technologies"></a>
+				</div>
+				<div class="brand-sponsors">
+					<small>Proudly sponsored by</small>
+					<ul>
+						<li class="windows"><img src="images/windows.png" alt="Windows 10"></li>
+						<li class="intel"><img src="images/intel.png" alt="Intel"></li>
+					</ul>
+					<p class="slogan"><small>The best devices in the world run Windows 10 Pro</small></p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="livewebinar">
+		<nav class="feedonate">
+			<div class="wrap">
+				<ul>
+					<li class="home">
+						<a href="home.html"><img src="images/home-white.png" alt="Home"></a>
+						<p>Back to Home</p>
+					</li>
+					<li class="techtips">
+						<a href="#techtips" class="openfeed"><img src="images/info.png" alt="Information"></a>
+						<p>Tech Tips</p>
+					</li>
+					<li class="feedback">
+						<a href="#feedback" class="openfeed"><img src="images/feedback.png" alt="Feedback"></a>
+						<p>Give us your feedback and stand a chance to win a prize</p>
+					</li>
+					<li class="donate">
+						<a href="#pledge" class="openfeed"><img src="images/ozharvest.png" alt="Donation Van"></a>
+						<p>Make a pledge to OzHarvest</p>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="embedWidget"></div>
+		<div id="feedback" class="feedback-form mfp-hide white-popup">
+			<form action="">
+				<div class="input">
+					<label for="">Name</label>
+					<input type="text">
+				</div>
+				<div class="input">
+					<label for="">Email</label>
+					<input type="email">
+				</div>
+				<div class="input">
+					<input type="submit">
+				</div>
+			</form>
+		</div>
+		<div id="pledge" class="feedback-form mfp-hide white-popup">
+			<h3>Thank you for your pledge.</h3>
+		</div>
+		<div id="techtips" class="ttips mfp-hide white-popup">
+			<h3>Tech Tips</h3>
+			<ul>
+				<li>The webinar is being streamed through your computer. Ensure that your computer speakers (or headset) are turned on. For the best stream quality, please make sure your browsers are updated to the latest version. We recommend joining our webinar via Google Chrome on your desktop/laptop.</li>
+				<li> If you are experiencing a disruption in network connection or a lag in streaming, push F5 on your keyboard to refresh your page.</li>
+				<li>Please close any programs or browser sessions running in the background that could cause issues. Webinars are bandwidth intensive, so closing any unnecessary brower tabs will help conserve your bandwidth.</li>
+			</ul>
+		</div>
+		<footer class="site-footer">
+			<div class="wrap">
+				<p>
+					<small>&copy;2020 Dell Technologies</small>
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="//vjs.zencdn.net/7.7.5/video.js"></script>
+	<script src="//cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.4.1/js-cloudimage-360-view.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type='text/javascript'>
+		var _options = {
+			'_license_key':'117-880-605',
+			'_role_token':'',
+			'_registration_token':'',
+			'_widget_containerID':'embedWidget',
+			'_widget_width':'100%',
+			'_widget_height':'100vh',
+		};
+		(function() {
+			!function(i){
+				i.Widget=function(c){
+					'function'==typeof c&&i.Widget.__cbs.push(c),
+					i.Widget.initialized&&(i.Widget.__cbs.forEach(function(i){i()}),
+						i.Widget.__cbs=[])
+				}, i.Widget.__cbs=[]
+			}(window);
+
+			var ab = document.createElement('script');
+			ab.type = 'text/javascript';
+			ab.async = true;
+			ab.src = 'https://embed.archiebot.com/em?t='+_options['_license_key']+'&'+Object.keys(_options).reduce(function(a,k){
+				a.push(k+'='+encodeURIComponent(_options[k]));
+				return a
+			},[]).join('&');
+
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ab, s);
+		})();
+	</script>
+</body>
+</html>
