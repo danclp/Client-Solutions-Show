@@ -17,6 +17,14 @@
 		"oAP": "/brochures/Dell-Monitors-Family-Brochure.pdf",
 		"oF": 0
 		},
+	"/brochures/Latitude-Brochure.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/brochures/Latitude-Brochure.zip",
+		"oF": 0
+		},
 	"/brochures/Latitude-Family-Brochure.pdf": {
 		"cB": 0,
 		"ft": 8192,
@@ -33,6 +41,14 @@
 		"oAP": "/brochures/LFD-Large-format-product-brochures.zip",
 		"oF": 0
 		},
+	"/brochures/OptiPlex-Brochure.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/brochures/OptiPlex-Brochure.zip",
+		"oF": 0
+		},
 	"/brochures/Optiplex-Family-Brochure.pdf": {
 		"cB": 0,
 		"ft": 8192,
@@ -41,12 +57,28 @@
 		"oAP": "/brochures/Optiplex-Family-Brochure.pdf",
 		"oF": 0
 		},
+	"/brochures/Precision-Brochure.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/brochures/Precision-Brochure.zip",
+		"oF": 0
+		},
 	"/brochures/Precision-Workstation-Family-Brochure.pdf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/brochures/Precision-Workstation-Family-Brochure.pdf",
+		"oF": 0
+		},
+	"/brochures/UltraSharp_P_Series_E-Series-Brouchure.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/brochures/UltraSharp_P_Series_E-Series-Brouchure.zip",
 		"oF": 0
 		},
 	"/brochures/Unified-Workspace-Brochures.zip": {
