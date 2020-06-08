@@ -48,6 +48,11 @@
 					color: site-color('day');
 				} // [type="submit"]
 			} // input
+
+			p {
+				color: lighten(site-color('primary'), 45);
+				margin: 0;
+			} // p
 		} // .login
 	} // .speaker-intro-login
 

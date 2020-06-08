@@ -51,12 +51,14 @@
 					<h3>Meet Our Speakers</h3>
 					<p>Tune in as our Keynote speakers uncover how collaboration between technology and people go hand-in-hand to create a positive and lasting impact on humanity.</p>
 					<p>Let Robert Vinokurov and <a href="https://futurecrun.ch/" target="_blank">Future Crunch</a> discuss the next ‘must-have’ skill – adaptability – and its significance for both individuals and organisations to thrive in dynamic environments.</p>
-					<p>For the best stream quality, please make sure your browsers are updated to the latest version. We recommend joining our webinar via Google Chrome on your desktop/laptop.</p>
+					<p>For the best stream quality, do ensure that your browser is updated to the latest version.</p>
+					<p>We recommend joining the event using Google Chrome with JavaScript enabled.</p>
 					<div class="login">
 						<form method="POST" action="https://clientsolutionshow.com/nodeServer/auth">
-			        <input type="email" name="email">
+			        <input type="email" name="email" placeholder="Your Registered Email">
 			        <input class="button-white" type="submit" value="Login">
 				    </form>
+				    <p><small>Refer to our confirmation or reminder email for your login details.</small></p>
 					</div>
 				</div>
 			</div>
@@ -75,6 +77,8 @@
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
+	<script src="js/login.js"></script>
+
 	<script>
 		let itemsArray = localStorage.getItem('userData') ? JSON.parse(localStorage.getItem('userData')) : [];
 		if(itemsArray.length > 0){

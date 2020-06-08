@@ -1,4 +1,80 @@
+.site-nav {
+	@include transition(top 0.35s ease-in-out);
+	@include position(fixed, $top: 0, $left: 0);
+	background: site-color('primary');
+	filter: drop-shadow(0 2px 5px rgba(site-color('night'), 0.35));
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	z-index: 10;
+
+	.toggleWrap {
+		height: 30px;
+		position: relative;
+	} // .toggleWrap
+
+	.toggle {
+		span {
+			background-color: site-color('day');
+		} // span
+	} // .toggle
+
+	.site-nav-container {
+		@include transition(all 0.35s ease-in-out);
+		height: 0;
+		overflow: hidden;
+
+		&.active {
+			height: 10.3em;
+		} // .active
+
+		li {
+			&:not(:last-child) {
+				border-bottom: 1px solid lighten(site-color('primary'), 30);
+			} // :not(:last-child)
+		} // li
+
+		a {
+			color: site-color('day');
+			display: block;
+			padding: 5px 10px;
+		} // a
+	} // .site-nav-container
+
+	@include breakpoint($tablet) {
+		.toggleWrap {
+			display: none;
+		} // .toggleWrap
+
+		.site-nav-container {
+			display: flex;
+			height: 100%;
+			justify-content: flex-end;
+
+			&.active {
+				height: inherit;
+			} // .active
+
+			li {
+				&:not(:last-child) {
+					border-bottom: 0;
+					border-right: 1px solid site-color('day');
+				} // &:not(:last-child)
+			} // li
+
+			a {
+				padding-top: 0;
+				padding-bottom: 0;
+			} // a
+		} // .site-nav-container
+	} // bp($tablet)
+} // .site-nav
+
 .site-header {
+	&.home {
+		padding-top: 40px;
+	} // .home
+
 	h1 {
 		background: image("masterhero_fs.jpg") center top/100% no-repeat;
 		padding-top: 65.43%;
@@ -9,6 +85,10 @@
 	} // h1
 
 	@include breakpoint($tablet) {
+		&.home {
+			padding-top: 50px;
+		} // .home
+
 		h1 {
 			background: image("masterhero_fx.jpg") center top/100% no-repeat;
 		} // h1
@@ -27,6 +107,8 @@
 		} // h1
 
 		&.home {
+			padding-top: 30px;
+
 			h1 {
 				background: image("masterhero_fxxn.jpg") center top/100% no-repeat;
 			} // .h1
