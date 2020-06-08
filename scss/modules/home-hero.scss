@@ -71,12 +71,24 @@
 } // .site-nav
 
 .site-header {
+	&.login {
+		padding: 0;
+	} // .login
+
 	&.home {
 		padding-top: 40px;
+
+		h1 {
+			background: image("masterhero_fs.jpg") center top/100% no-repeat;
+		} // h1
 	} // .home
 
+	a {
+		display: block;
+	} // a
+
 	h1 {
-		background: image("masterhero_fs.jpg") center top/100% no-repeat;
+		background: image("masterhero_fx.jpg") center top/100% no-repeat;
 		padding-top: 65.43%;
 		font: 0/0 a;
 		text-shadow: none;

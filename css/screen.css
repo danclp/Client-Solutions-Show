@@ -535,9 +535,6 @@ figure {
   background-color: transparent;
   padding: 0;
 }
-.site-header.home a {
-  display: block;
-}
 .site-header .brand-dell {
   width: 180px;
 }
@@ -1087,11 +1084,20 @@ figure {
   }
 }
 
+.site-header.login {
+  padding: 0;
+}
 .site-header.home {
   padding-top: 40px;
 }
-.site-header h1 {
+.site-header.home h1 {
   background: url("../images/masterhero_fs.jpg") center top/100% no-repeat;
+}
+.site-header a {
+  display: block;
+}
+.site-header h1 {
+  background: url("../images/masterhero_fx.jpg") center top/100% no-repeat;
   padding-top: 65.43%;
   font: 0/0 a;
   text-shadow: none;
@@ -1170,11 +1176,12 @@ figure {
     display: flex;
   }
   .speaker-login .speakers-bio {
-    flex: 1 1 60%;
+    flex-direction: column;
+    flex: 1 1 30%;
     margin-right: 20px;
   }
   .speaker-login .speaker-intro-login {
-    flex: 1 1 40%;
+    flex: 1 1 70%;
   }
   .speaker-login .speaker-intro-login h3 {
     margin-top: 10px;
@@ -1185,11 +1192,12 @@ figure {
     display: flex;
   }
   .speaker-login .speakers-bio {
-    flex: 1 1 60%;
+    flex-direction: column;
+    flex: 1 1 30%;
     margin-right: 20px;
   }
   .speaker-login .speaker-intro-login {
-    flex: 1 1 40%;
+    flex: 1 1 70%;
   }
   .speaker-login .speaker-intro-login h3 {
     margin-top: 10px;
@@ -1198,6 +1206,13 @@ figure {
 @media screen and (min-width: 1024px) {
   .speaker-login {
     padding: 50px 0;
+  }
+  .speaker-login .speakers-bio {
+    flex-direction: row;
+    flex: 1 1 60%;
+  }
+  .speaker-login .speaker-intro-login {
+    flex: 1 1 40%;
   }
 }
 @media screen and (min-width: 1336px) {
