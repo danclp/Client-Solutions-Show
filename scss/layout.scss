@@ -167,6 +167,7 @@
 		border-radius: 0;
 		top: 50%;
 		left: 50%;
+		margin-left: 0;
 	} // .vjs-big-play-button
 } // #video
 
@@ -639,6 +640,23 @@
 		margin: 0;
 	} // p
 } // .nojs
+
+.disclaimer {
+	color: lighten(site-color('night'), 50);
+	font-size: 0.65em;
+	margin-bottom: 30px;
+	margin-right: 5px;
+	text-align: right;
+
+	@include breakpoint($tablet) {
+		flex-basis: 100%;
+		margin-right: 0;
+
+		p:not(:first-child) {
+			margin-top: -10px;
+		} // p:not(:first-child)
+	} // bp($tablet)
+} // .disclaimer
 
 .site-footer {
 	background-color: site-color('midnight');

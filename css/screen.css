@@ -655,6 +655,7 @@ figure {
   border-radius: 0;
   top: 50%;
   left: 50%;
+  margin-left: 0;
 }
 
 .feedonate {
@@ -1017,6 +1018,23 @@ figure {
   margin: 0;
 }
 
+.disclaimer {
+  color: gray;
+  font-size: 0.65em;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .disclaimer {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  .disclaimer p:not(:first-child) {
+    margin-top: -10px;
+  }
+}
+
 .site-footer {
   background-color: #00447C;
   color: #FFF;
@@ -1282,12 +1300,6 @@ figure {
 .product-showcase .product.product-5 .product-img {
   background-image: url("../images/main-pdt-5.png");
   background-position: top right;
-}
-.product-showcase .product .disclaimer p {
-  color: gray;
-  font-size: 0.65em;
-  line-height: 1;
-  text-align: right;
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
   .product-showcase .product .product-info {
@@ -1649,6 +1661,10 @@ aside .family-menu {
     display: block;
     text-align: right;
   }
+
+  .disclaimer {
+    margin-bottom: 0;
+  }
 }
 .product-hero {
   background-color: #ededed;
@@ -1714,6 +1730,9 @@ aside .family-menu {
   flex: 0 0 40%;
   margin: 10px;
   text-align: center;
+}
+.product-hero .product-cta ul li.home {
+  margin: 10px 10px 0 10px;
 }
 .product-hero .product-cta ul li.home img {
   width: 40px;

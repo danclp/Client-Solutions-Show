@@ -29,7 +29,8 @@ jQuery(document).ready(function($) {
 			},
 			Field5: {
 				required: true,
-				digits: true
+				digits: true,
+				minlength: 8
 			}
 		},
 		messages: {
@@ -49,35 +50,6 @@ jQuery(document).ready(function($) {
 		validations:val
 	}).navigateTo(0);
 
-	$('#form47').submit(function(){
-		if($('#checkbox-1 input:checked').length < 1){
-			$('#checkbox1alert').show();
-			$('#checkbox1alert').html("You need at least 1 answers to be checked for this question");
-			
-			return false;
-		}else{
-			$('#checkbox1alert').hide();
-		}
-
-		if($('#checkbox-2 input:checked').length < 1){
-			$('#checkbox2alert').show();
-			$('#checkbox2alert').html("You need 1 answers to be checked for this question");
-			
-			return false;
-		}else{
-			$('#checkbox2alert').hide();
-		}
-
-		if($('#checkbox-3 input:checked').length < 1){
-			$('#checkbox3alert').show();
-			$('#checkbox3alert').html("You need 1 answers to be checked for this question");
-			
-			return false;
-		}else{
-			$('#checkbox3alert').hide();
-		}
-	});
-
 	var other = $("#Field212");
 	var initial = other.is(":checked");
 	var otherPos = $("#foli411")[initial ? "removeClass" : "addClass"]("hide");
@@ -87,4 +59,35 @@ jQuery(document).ready(function($) {
 		otherPos[this.checked ? "removeClass" : "addClass"]("hide");
 		posInputs.attr("disabled", !this.checked);
 	});
+
+	function checkboxValidations(){
+		if($('#checkbox-1 input:checked').length < 1){
+			$('#checkbox1alert').show();
+			$('#checkbox1alert').html("You need at least 1 answers to be checked for this question");
+
+			return false;
+		}else{
+			$('#checkbox1alert').hide();
+		}
+
+		if($('#checkbox-2 input:checked').length < 1){
+			$('#checkbox2alert').show();
+			$('#checkbox2alert').html("You need 1 answers to be checked for this question");
+
+			return false;
+		}else{
+			$('#checkbox2alert').hide();
+		}
+
+		if($('#checkbox-3 input:checked').length < 1){
+			$('#checkbox3alert').show();
+			$('#checkbox3alert').html("You need 1 answers to be checked for this question");
+
+			return false;
+		}else{
+			$('#checkbox3alert').hide();
+		}
+
+		return true;
+	}
 });

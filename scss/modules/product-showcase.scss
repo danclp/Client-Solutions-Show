@@ -89,15 +89,6 @@
 				} // background
 			} // .product-img
 		} // .product-5
-
-		.disclaimer {
-			p {
-				color: lighten(site-color('night'), 50);
-				font-size: 0.65em;
-				line-height: 1;
-				text-align: right;
-			} // p
-		} // .disclaimer
 	} // .product
 
 	@include retina(iPhonel) {
