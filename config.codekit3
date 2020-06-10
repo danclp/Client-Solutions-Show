@@ -3071,17 +3071,6 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
-	"/js/home-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/home-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/home.js": {
 		"bF": 0,
 		"ft": 64,
@@ -3089,6 +3078,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/home-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/jquery.countdown.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/jquery.countdown-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3104,13 +3104,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/login-min.js": {
+	"/js/jquery.plugin.min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/login-min-min.js",
+		"oAP": "/js/jquery.plugin.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3126,17 +3126,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/main-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/main-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/main.js": {
 		"bF": 0,
 		"ft": 64,
@@ -3144,17 +3133,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/main-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/multi-form-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/multi-form-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3177,17 +3155,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/owl.carousel.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/product-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/product-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

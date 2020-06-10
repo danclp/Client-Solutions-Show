@@ -1,1 +1,0 @@
-jQuery(document).ready((function(o){o("#loginbtn").click((function(){o("html, body").animate({scrollTop:o("#speaker-intro-login").offset().top},1e3)}))}));

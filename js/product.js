@@ -6,7 +6,18 @@ jQuery(document).ready(function($) {
     margin:10,
     URLhashListener:true,
     startPosition: 'URLHash',
-    dots: false
+    dots: false,
+    responsive: {
+      0: {
+        nav: true
+      },
+      768: {
+        nav: true
+      },
+      1024: {
+        nav: false
+      }
+    }
 	});
 
 	$(document).ready(function() {

@@ -87,6 +87,11 @@
 					} // img
 				} // .home
 
+				&:nth-child(3) {
+					flex-basis: auto;
+					width: 87%;
+				} // nth-child(3)
+
 				&.bluebtn {
 					a {
 						color: site-color('day');

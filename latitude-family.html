@@ -87,7 +87,7 @@
 					</nav>
 				</aside>
 				<div class="product-intro-video">
-					<video id="video" class="video-js vjs-fluid vjs-big-play-button" controls autoplay="true" muted preload="auto" poster="https://i.vimeocdn.com/video/902278272.jpg" data-setup="{}" >
+					<video id="video" class="video-js vjs-fluid vjs-big-play-button" controls onclick="goclick('latitude-video')" preload="auto" poster="https://i.vimeocdn.com/video/902278272.jpg" data-setup="{}" >
 						<source src="https://player.vimeo.com/external/425015671.hd.mp4?s=a89b710f861886b9e0bc048c7eb79c51d01478e1&profile_id=174" type="video/mp4" />
 						<p class="vjs-no-js">
 							To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
@@ -222,7 +222,7 @@
 					<li class="donate" onclick="goclick('donate')">
 						<a href="#pledge" class="openfeed">
 							<img src="images/ozharvest.png" alt="Donation Van">
-							Click here to donate a meal from Dell Technologies.
+							<div>Click here to donate a meal from Dell Technologies.</div>
 						</a>
 					</li>
 				</ul>
@@ -267,7 +267,7 @@
 					    		    Email <span id="req_3" class="req">*</span>
 					    		  </label>
 					    		  <div>
-					    		    <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="0" placeholder="" required />
+					    		    <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="0" placeholder="" readonly required />
 					    		  </div>
 					    		</div>
 					    		<div id="foli4" data-wufoo-field data-field-type="text" class="identity notranslate">
@@ -640,8 +640,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
 	<script>
 		var TITLE = "latitude-family";
+		var SUCCESS_DONATE = "Thank you for your support.";	
 	</script>
 	<script src="./script/script.js"></script>
 	<!-- wtp -->
+	
 </body>
 </html>

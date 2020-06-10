@@ -360,6 +360,10 @@
   margin: 20px auto;
 
   .mfp-close {
+  	background: lighten(site-color('night'), 80);
+  	border-radius: 50%;
+  	margin-top: 15px;
+  	margin-right: 15px;
 		&:hover {
 			color: site-color('day');
 		} // :hover

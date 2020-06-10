@@ -87,39 +87,38 @@
 					</nav>
 				</aside>
 				<div class="product-intro-video">
-					<video id="my-video" class="video-js vjs-fluid vjs-big-play-button" controls preload="auto" poster="https://i.vimeocdn.com/video/901998407.jpg" data-setup="{}" >
+					<video id="my-video" class="video-js vjs-fluid vjs-big-play-button" onclick="goclick('display-video')" controls preload="auto" poster="https://i.vimeocdn.com/video/901998407.jpg" data-setup="{}" >
 						<source src="https://player.vimeo.com/external/424822456.hd.mp4?s=91e5e278d442397bd1f81edf12e3fb293c8be636&profile_id=174" type="video/mp4" />
 						<p class="vjs-no-js">
 							To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
 						</p>
 					</video>
-					<p class="video-shout">Do watch our product video before entering the chat</p>
 					<div class="products-intro owl-carousel owl-theme owl-pro">
 						<div class="product-intro" data-hash="usmonitor">
 							<div class="cta">
 								<ul>
-									<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip">Download Brochure</a></li>
+									<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip" onclick="goclick('download-brochure-usmonitor')">Download Brochure</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="product-intro" data-hash="pseries">
 							<div class="cta">
 								<ul>
-									<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip">Download Brochure</a></li>
+									<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip" onclick="goclick('download-brochure-pseries')">Download Brochure</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="product-intro" data-hash="eseries">
 							<div class="cta">
 								<ul>
-									<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip">Download Brochure</a></li>
+									<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip" onclick="goclick('download-brochure-eseries')">Download Brochure</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="product-intro" data-hash="lformat">
 							<div class="cta">
 								<ul>
-									<li class="whitebtn"><a href="brochures/LFD-Large-format-product-brochures.zip">Download Brochure</a></li>
+									<li class="whitebtn"><a href="brochures/LFD-Large-format-product-brochures.zip" onclick="goclick('download-brochure-lformat')">Download Brochure</a></li>
 								</ul>
 							</div>
 						</div>
@@ -138,7 +137,7 @@
 										<li class="home">
 											<a href="home.html"><img src="images/home.png" alt="Home"></a>
 										</li>
-										<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip">Download Brochure</a></li>
+										<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip" onclick="goclick('download-brochure-usmonitor')">Download Brochure</a></li>
 									</ul>
 									<p class="slogan"><small>The best devices in the world run Windows 10 Pro</small></p>
 								</div>
@@ -155,7 +154,7 @@
 										<li class="home">
 											<a href="home.html"><img src="images/home.png" alt="Home"></a>
 										</li>
-										<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip">Download Brochure</a></li>
+										<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip" onclick="goclick('download-brochure-pseries')">Download Brochure</a></li>
 									</ul>
 									<p class="slogan"><small>The best devices in the world run Windows 10 Pro</small></p>
 								</div>
@@ -172,7 +171,7 @@
 										<li class="home">
 											<a href="home.html"><img src="images/home.png" alt="Home"></a>
 										</li>
-										<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip">Download Brochure</a></li>
+										<li class="whitebtn"><a href="brochures/UltraSharp_P_Series_E-Series-Brouchure.zip" onclick="goclick('download-brochure-eseries')">Download Brochure</a></li>
 									</ul>
 									<p class="slogan"><small>The best devices in the world run Windows 10 Pro</small></p>
 								</div>
@@ -189,7 +188,7 @@
 										<li class="home">
 											<a href="home.html"><img src="images/home.png" alt="Home"></a>
 										</li>
-										<li class="whitebtn"><a href="brochures/LFD-Large-format-product-brochures.zip">Download Brochure</a></li>
+										<li class="whitebtn"><a href="brochures/LFD-Large-format-product-brochures.zip" onclick="goclick('download-brochure-lformat')">Download Brochure</a></li>
 									</ul>
 									<p class="slogan"><small>The best devices in the world run Windows 10 Pro</small></p>
 								</div>
@@ -214,7 +213,7 @@
 						<li class="donate" onclick="goclick('donate')">
 							<a href="#pledge" class="openfeed">
 								<img src="images/ozharvest.png" alt="Donation Van">
-								Click here to donate a meal from Dell Technologies.
+								<div>Click here to donate a meal from Dell Technologies.</div>
 							</a>
 						</li>
 					</ul>
@@ -259,7 +258,7 @@
 					    		    Email <span id="req_3" class="req">*</span>
 					    		  </label>
 					    		  <div>
-					    		    <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="0" placeholder="" required />
+					    		    <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="0" placeholder="" readonly required />
 					    		  </div>
 					    		</div>
 					    		<div id="foli4" data-wufoo-field data-field-type="text" class="identity notranslate">
@@ -627,5 +626,15 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/product.js"></script>
 	<script src="js/main.js"></script>
+
+	<!-- wtp -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
+	<script>
+		var TITLE = "display-family";
+		var SUCCESS_DONATE = "Thank you for your support.";
+	</script>
+	<script src="./script/script.js"></script>
+	<!-- wtp -->
+	
 </body>
 </html>

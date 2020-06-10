@@ -30,33 +30,19 @@ aside {
 		padding: 5px 10px;
 	} // .video-shout
 
-	.cta {
+	.products-intro {
 		display: none;
 
-		ul {
-			li {
-				a {
-					display: block;
-				} // a
-			} // li
-		} // ul
-	} // .cta
-
-	.product-intro {
-		h2 {
-			font: {
-				size: 1.25em;
-				weight: weight(bold);
-			} // font
-			margin: 20px 0 0;
-		} // h2
-
-		.slogan {
-			color: lighten(site-color('night'), 65);
-			margin-top: 0;
-			text-align: left;
-		} // .slogan
-	} // .product-intro
+		.cta {
+			ul {
+				li {
+					a {
+						display: block;
+					} // a
+				} // li
+			} // ul
+		} // .cta
+	} // .products-intro
 } // .product-intro-video
 
 .products-preview {
@@ -122,6 +108,27 @@ aside {
 			margin-top: 0;
 		} // .desktop
 	} // .slogan
+
+	.owl-nav {
+		position: absolute;
+		bottom: 40px;
+		right: 0;
+
+		button {
+			background-color: lighten(site-color('night'), 80) !important;
+			border-radius: 50% !important;
+			color: lighten(site-color('night'), 50) !important;
+			font-size: 1.35em !important;
+			line-height: 30px;
+			width: 30px;
+			height: 30px;
+
+			span {
+				display: block;
+				margin-top: -3px;
+			} // span
+		} // button
+	} // .owl-nav
 } // .products-preview
 
 @include retina(iPhonel) {
@@ -234,27 +241,30 @@ aside {
 		flex: 0 0 55%;
 		padding: 0 20px;
 
-		.cta {
+		.products-intro {
 			display: block;
-			margin-top: 20px;
-			margin-bottom: 5px;
 
-			ul {
-				display: flex;
+			.cta {
+				margin-top: 20px;
+				margin-bottom: 5px;
 
-				li {
+				ul {
 					display: flex;
-					align-items: center;
-					margin-right: 15px;
-				} // li
 
-				span {
-					color:  lighten(site-color('primary'), 40);
-					display: block;
-					font-size: 0.65em;
-				} // span
-			} // ul
-		} // .cta
+					li {
+						display: flex;
+						align-items: center;
+						margin-right: 15px;
+					} // li
+
+					span {
+						color:  lighten(site-color('primary'), 40);
+						display: block;
+						font-size: 0.65em;
+					} // span
+				} // ul
+			} // .cta
+		} // .products-intro
 	} // .product-intro-video
 
 	.products-preview {

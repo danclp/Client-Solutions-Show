@@ -51,7 +51,7 @@
 						<p>Dell Precision delivers versatile designs, intelligent performance and mission critical reliability to conquer the industry’s most demanding applications.</p>
 					</div>
 					<div class="product-video">
-						<video id="video" class="video-js vjs-fluid vjs-big-play-button" controls preload="auto" poster="https://i.vimeocdn.com/video/902286242.jpg" data-setup="{}" >
+						<video id="video" class="video-js vjs-fluid vjs-big-play-button" onclick="goclick('precision-video')" controls preload="auto" poster="https://i.vimeocdn.com/video/902286242.jpg" data-setup="{}" >
 					    <source src="https://player.vimeo.com/external/425020411.hd.mp4?s=4cda4725d0515af9007b615f802d60fb88876c46&profile_id=174" type="video/mp4" />
 					    <p class="vjs-no-js">
 					      To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
@@ -66,7 +66,7 @@
 				</div>
 				<div class="col col-right precision">
 					<div id="product" class="product-rotate">
-						<div class="cloudimage-360" data-folder="images/360/precision/" data-filename="Precision_{index}.png" data-amount="72" data-spin-reverse="true" data-bottom-circle="true" data-magnifier="3" ></div>
+						<div class="cloudimage-360" data-folder="images/360/precision/" onclick="goclick('precision-360')" data-filename="Precision_{index}.png" data-amount="72" data-spin-reverse="true" data-bottom-circle="true" data-magnifier="3" ></div>
 					</div>
 					<nav class="product-cta">
 						<ul>
@@ -74,7 +74,7 @@
 								<a href="home.html"><img src="images/home.png" alt="Home"></a>
 							</li>
 							<li class="whitebtn"><a href="precision-family.html">Precision Family Page</a></li>
-							<li class="whitebtn"><a href="brochures/Precision-Brochure.zip">Download Brochure</a></li>
+							<li class="whitebtn"><a href="brochures/Precision-Brochure.zip" onclick="goclick('download-brochure-precision-family')">Download Brochure</a></li>
 							<li class="bluebtn"><a href="precision-chat.html">Chat with an Expert</a></li>
 						</ul>
 						<p class="slogan wrap"><small>The best devices in the world run Windows 10 Pro</small></p>
@@ -93,7 +93,7 @@
 						<li class="donate" onclick="goclick('donate')">
 							<a href="#pledge" class="openfeed">
 								<img src="images/ozharvest.png" alt="Donation Van">
-								Click here to donate a meal from Dell Technologies.
+								<div>Click here to donate a meal from Dell Technologies.</div>
 							</a>
 						</li>
 					</ul>
@@ -138,7 +138,7 @@
 					    		    Email <span id="req_3" class="req">*</span>
 					    		  </label>
 					    		  <div>
-					    		    <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="0" placeholder="" required />
+					    		    <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="0" placeholder="" readonly required />
 					    		  </div>
 					    		</div>
 					    		<div id="foli4" data-wufoo-field data-field-type="text" class="identity notranslate">
@@ -504,5 +504,15 @@
 	<script src="//vjs.zencdn.net/7.7.5/video.js"></script>
 	<script src="//cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.4.1/js-cloudimage-360-view.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<!-- wtp  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
+	<script>
+		var TITLE = "precision";
+		var SUCCESS_DONATE = "Thank you for your support.";
+	</script>
+	<script src="./script/script.js"></script>
+	<!-- wtp -->
+	
 </body>
 </html>

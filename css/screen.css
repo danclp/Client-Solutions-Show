@@ -799,6 +799,12 @@ figure {
   max-width: 960px;
   margin: 20px auto;
 }
+.white-popup .mfp-close {
+  background: #cccccc;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-right: 15px;
+}
 .white-popup .mfp-close:hover {
   color: #FFF;
 }
@@ -1241,6 +1247,31 @@ figure {
   }
 }
 
+.shield {
+  background: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.shield .shield-message {
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.shield .shield-message p {
+  font-size: 1.25em;
+}
+.shield .shield-message a {
+  background: #FFF;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
 .product-showcase {
   padding-top: 40px;
 }
@@ -1479,21 +1510,11 @@ aside .family-menu {
   margin-top: 0;
   padding: 5px 10px;
 }
-.product-intro-video .cta {
+.product-intro-video .products-intro {
   display: none;
 }
-.product-intro-video .cta ul li a {
+.product-intro-video .products-intro .cta ul li a {
   display: block;
-}
-.product-intro-video .product-intro h2 {
-  font-size: 1.25em;
-  font-weight: 700;
-  margin: 20px 0 0;
-}
-.product-intro-video .product-intro .slogan {
-  color: #a6a6a6;
-  margin-top: 0;
-  text-align: left;
 }
 
 .products-preview .product-intro h3 {
@@ -1540,6 +1561,24 @@ aside .family-menu {
 .products-preview .slogan.desktop {
   display: none;
   margin-top: 0;
+}
+.products-preview .owl-nav {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+}
+.products-preview .owl-nav button {
+  background-color: #cccccc !important;
+  border-radius: 50% !important;
+  color: gray !important;
+  font-size: 1.35em !important;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+}
+.products-preview .owl-nav button span {
+  display: block;
+  margin-top: -3px;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
@@ -1627,20 +1666,22 @@ aside .family-menu {
     flex: 0 0 55%;
     padding: 0 20px;
   }
-  .product-intro-video .cta {
+  .product-intro-video .products-intro {
     display: block;
+  }
+  .product-intro-video .products-intro .cta {
     margin-top: 20px;
     margin-bottom: 5px;
   }
-  .product-intro-video .cta ul {
+  .product-intro-video .products-intro .cta ul {
     display: flex;
   }
-  .product-intro-video .cta ul li {
+  .product-intro-video .products-intro .cta ul li {
     display: flex;
     align-items: center;
     margin-right: 15px;
   }
-  .product-intro-video .cta ul span {
+  .product-intro-video .products-intro .cta ul span {
     color: #9bd4ff;
     display: block;
     font-size: 0.65em;
@@ -1736,6 +1777,10 @@ aside .family-menu {
 }
 .product-hero .product-cta ul li.home img {
   width: 40px;
+}
+.product-hero .product-cta ul li:nth-child(3) {
+  flex-basis: auto;
+  width: 87%;
 }
 .product-hero .product-cta ul li.bluebtn a {
   color: #FFF;
