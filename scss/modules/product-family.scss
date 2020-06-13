@@ -111,14 +111,14 @@ aside {
 
 	.owl-nav {
 		position: absolute;
-		bottom: 40px;
+		top: 0;
 		right: 0;
 
 		button {
-			background-color: lighten(site-color('night'), 80) !important;
+			background-color: site-color('primary') !important;
 			border-radius: 50% !important;
-			color: lighten(site-color('night'), 50) !important;
-			font-size: 1.35em !important;
+			color: site-color('day') !important;
+			font-size: 1.5em !important;
 			line-height: 30px;
 			width: 30px;
 			height: 30px;
